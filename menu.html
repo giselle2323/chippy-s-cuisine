@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MENU</title>
+</head>
+<body>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>MENU</title>
+        
+        <!-- Custom styles for this template -->
+        <link href="css/main.css" rel="stylesheet">
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/css/bootstrap.min.css" rel="stylesheet">
+         <style >
+      .card{
+        height: 400px;
+        margin-left: 20px;
+        margin-right: 50px;
+      }
+      .card-img-top{
+        height: 60%;
+      }
+    </style>
+
+    </head>
+    <body>
+            
+            
+        <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-custom fixed-top js-scroll-trigger" id="site-navbar">
+   <div class="container-fluid">
+    <a class="navbar-brand" id="cuisine" href="#">CHIPPY'S CUISINE</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link js-scroll-trigger" href="index.php">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="index.php">MENU</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="index.php">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="index.php">CHEFS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="index.php">CONTACT</a>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="btn btn-info btn-sm btn-outline-success" data-toggle="modal" data-target="#myModal">ADMIN</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content" id="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title text-center">SIGN IN HERE ADMIN</h4>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex jusify-content-center align-items-center container contact">
+         <form class="needs-validation" novalidate method="POST" action="admin.php">
+           <div class="form-row">
+            <div class="form-group col-md-12 mb-3">
+              <label for="Username">Username</label>
+              <input type="text" class="form-control" id="username" placeholder="Username" required>
+              <div class="invalid-feedback">
+                please input your Username
+              </div>
+            </div>
+
+            <div class="form-group col-md-12 mb-3">
+              <label for="inputPassword4">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Password" required>
+              <div class="invalid-feedback">
+                please input your password
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary" name="submit" id="submit">submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+
+</div>
+</div>
+
+
+
+   
+       <section id="menupage" class="px-3 m-3 ">
+            <h1 class="text-center  text-white py-5">MENU BY CATEGORY</h1>
+            <div class="row" >
+                    <div class="col-sm-4">
+                    <div class="card mb-3  text-white text-center bg-dark" style="width: 300px">
+                        <img class="card-img-top" src="images/poundedyam.jpg" alt="Card image cap" height="150"  >
+                        <div class="card-body">
+                            <h5 class="card-title bg-danger">Local Dishes</h5>
+                            <p class="card-text">African local dishes prepared to give you a wonderful experience</p>
+                            <a href="local.html" class="btn btn-danger">ORDER NOW </a>
+                       </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card mb-3 text-center text-white bg-dark" style="width: 300px;">
+                        <img class="card-img-top" src="images/salmon.jpg" alt="Card image cap" height="150">
+                        <div class="card-body">
+                            <h5 class="card-title bg-danger">Continental Dishes</h5>
+                            <p class="card-text">A Variety of sumptous meals froma diffrent cultures and countries </p>
+                            <a href="Continental.html" class="btn btn-danger">ORDER NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card mb-3 text-center text-white bg-dark" style="width: 300px;">
+                        <img class="card-img-top" src="images/chicken.jpg" alt="Card image cap" height="150">
+                        <div class="card-body">
+                            <h5 class="card-title bg-danger">Grabs</h5>
+                            <p class="card-text">Spicy grabs for chiil outs and merry time.</p>
+                            <a href="grabs.html" class="btn btn-danger">ORDER NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card mb-3 text-center text-white bg-dark" style="width: 300px;">
+                        <img class="card-img-top" src="images/drink.jpg" alt="Card image cap" height="150">
+                            <div class="card-body">
+                                <h5 class="card-title bg-danger">Drinks</h5>
+                                <p class="card-text"> chilled drinks to accompany great taste of food</p>
+                                <a href="drinks.html" class="btn btn-danger">ORDER NOW</a>
+                           </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <div class="container-fluid bg-dark text-center py-3" id="social">
+  <ul>
+    <li><a href="https://web.facebook.com/?_rdc=1&_rdr"><i class="fa fa-facebook"></i></a></li>
+    <li><a href="https://www.linkedin.com/feed/?trk="><i class="fa fa-linkedin"></i></a></li>
+    <li><a  href="https://twitter.com/yakubu_jumoke"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="https://www.instagram.com/jhumeey/?hl=en"><i class="fa fa-instagram"></i></a></li>
+  </ul>
+  <footer class="text-center ml-auto text-white">
+    <p>All Rights Reserved. Chippy's Cuisine 2018.</p>
+  </footer>
+</div>
+    </body>
+   
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/js/bootstrap.bundle.min.js"></script>
+</html>

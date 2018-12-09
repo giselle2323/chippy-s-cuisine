@@ -1,0 +1,257 @@
+@import url('../font-awesome/css/font-awesome.min.css');
+/* Body*/
+body{
+	padding-top: 60px;
+}
+/* Nav Bar */
+.bg-custom{
+	background-color:#000000;
+	color:#ffffff;
+}
+#cuisine{
+	color:red;
+}
+/*
+ Carousel-item
+ */
+
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.carousel-caption {
+    top: 30%;
+    bottom: auto;
+}
+#spicy{
+	color: #cc0000;
+	font-size: 70px;
+}
+#and{
+	color: #ffffff;
+	display: inline;
+	font-size: 70px;
+}
+#tasty{
+	color: #009e0f;
+	display: inline;
+	font-size: 70px;
+}
+/* Menu*/
+.menu{
+	background-color: #000000;
+}
+#menu{
+	background-color: #000000;
+	border: solid;
+    border-color: red;
+	padding-left: 12%;
+	padding-right: 12%;
+    padding-top: 0.5%;
+}
+#menu h1 {
+	color: #ffffff;
+}
+/* About us */
+#aboutus{
+	background-image: url(../images/tomatoes.jpg);
+	background-attachment: contain;
+	position: relative;
+	height: 40vh;
+
+}
+
+.welcome{
+	top: 30%;
+	bottom: auto;
+}
+/* Chefs */
+#chefs{
+	background-color: #000000;
+	border: solid;
+	border-color: green;
+	padding-left: 12%;
+	padding-right: 12%;
+    padding-top: 0.5%;
+}
+/* Contact*/
+#contact{
+	background-color: #000000;
+	border-color: red;
+}
+/*
+ Local Dish
+ */
+ #localdish{
+ 	background-color: #009e0f;
+
+ }
+ .head{
+ 	color: #cc0000;
+
+ }
+
+/*
+ Local Dish
+ */
+ #menupage{
+ 	background-color: #000000;
+	border: solid;
+	border-color:red;
+	margin-left: 3%;
+	margin-right: 3%;
+    padding-top: 0.5%;
+ }
+ /*
+ Local food
+ */
+ #localfood{
+	background-color: #000000;
+	border: solid;
+	border-color:red;
+	margin-left: 3%;
+	margin-right: 3%;
+    padding-top: 0.5%;
+	
+
+ }
+ /*
+ continental
+ */
+ #continental{
+	background-color: #000000;
+	border: solid;
+	border: solid;
+	border-color:red;
+	margin-left: 3%;
+	margin-right: 3%;
+    padding-top: 0.5%;
+ }
+ /*
+ drinks
+ */
+ #drinks{
+	background-color: #000000;
+	border: solid;
+	border: solid;
+	border-color:red;
+	margin-left: 3%;
+	margin-right: 3%;
+    padding-top: 0.5%;
+ }
+ /*
+ drinks
+ */
+ #grabs{
+	background-color: #000000;
+	border: solid;
+	border-color:red;
+	border: solid;
+	border-color:red;
+	margin-left: 3%;
+	margin-right: 3%;
+    padding-top: 0.5%;
+ }
+ 
+ /*admin */
+ #adminpage{
+	 background-image: url(../images/tomato.jpg)
+	 background-size: cover;
+	 color: white;
+ }
+/*Modal */
+#modal-content{
+	background-image: url(../images/chicken.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#signinModal{
+	background-color: #ffffff;
+}
+.error{
+            color: red;
+          }
+          .success{
+            color: green;
+          }
+          /* Menu*/
+          #order{
+          	background-image: url(../images/order.jpg);
+          }
+ /*success*/
+#success{
+	background-image: url(../images/message.jpg);
+	background-repeat: none;
+	background-size: cover;
+	height: 100vh;
+	min-width: 300px;
+	top:30%;
+	bottom:auto;
+}
+#success h1{
+	padding-top: 25%;
+}
+/* social links*/
+#social{
+	text-align: center;
+}
+ul {
+    overflow: auto;
+}
+ 
+ul li {
+    list-style-type: none;
+    float: left;
+}
+ 
+ul li a i {
+    background: #205D7A;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 25px;
+    text-align: center;
+    margin-right: 10px;
+    padding-top: 15%;
+    transition: all 0.2s ease-in-out;
+}
+.fa-facebook {
+    background:#3b5998
+} 
+.fa-linkedin {
+    background:#007bb6
+}
+.fa-twitter {
+    background:#00aced
+}
+.google-plus {
+    background:#dd4b39
+}
+ul li a i:hover {
+    opacity: .7;
+}
+
+
+
+/*Responsive */
+@media screen and (max-width: 766px){
+	body{
+		padding-top: 60px;
+	}
+}
+@media screen and (min-width: 768px){
+	body{
+		padding-top: 60px;
+	}
+}
+@media screen and (min-width: 992px){
+	body{
+		padding-top: 60px;
+	}
+}
