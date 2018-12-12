@@ -26,7 +26,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-custom fixed-top js-scroll-trigger" id="site-navbar">
    <div class="container-fluid">
-    <a class="navbar-brand" id="cuisine" href="#">CHIPPY'S CUISINE</a>
+    <a class="navbar-brand" id="cuisine" href="#home">CHIPPY'S CUISINE</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -64,12 +64,12 @@
     <!-- Modal content-->
     <div class="modal-content" id="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
         <h4 class="modal-title text-center">SIGN IN HERE ADMIN</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
       <div class="modal-body">
         <div class="d-flex jusify-content-center align-items-center container contact">
-         <form class="needs-validation" novalidate method="POST" action="admin.php">
+         <form class="needs-validation" novalidate method="POST" action="admin.php" id="myform">
            <div class="form-row">
             <div class="form-group col-md-12 mb-3">
               <label for="Username">Username</label>
@@ -88,12 +88,12 @@
             </div>
           </div>
 
-          <button type="submit" class="btn btn-primary" name="submit" id="submit">submit</button>
+          <button type="submit" class="btn btn-success" name="submit" id="submit">submit</button>
         </form>
       </div>
     </div>
     <div class="modal-footer">
-      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
     </div>
   </div>
 
@@ -198,21 +198,21 @@
 </section>
 <section id="aboutus">
   <div class=" aboutus text-center" style="
-    position: absolute;top: 0;right: 0;
-    left: 0;
-    bottom: 0;
-    margin: auto;
-    height: 50%;
-    width: 80%;
-">
+  position: absolute;top: 0;right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  height: 50%;
+  width: 80%;
+  ">
 
-    <h2 class="text-center text-white">ABOUT US</h2>
-    <p class="text-center text-white">Chippy's Cuisine was founded by Yakubu Aminat Jumoke. It was a restaurant that started remotely 
+  <h2 class="text-center text-white">ABOUT US</h2>
+  <p class="text-center text-white">Chippy's Cuisine was founded by Yakubu Aminat Jumoke. It was a restaurant that started remotely 
     in mayfair,Ile-ife.It was majorly a remote kitchen before and we brought our presence online inorder to reduce the waiting time 
   for meals and serve our customers better. We have capable and hard working chefs who put a lot of efforts into making delicious meals for the customers. </p>
 
 
-  </div>
+</div>
 </section>
 <section id="chefs" class="py-5">
   <h1 class="text-center justify mb-3 text-white mx-auto">CHEFS </h1>
@@ -259,43 +259,45 @@
 </section>
 
 
-<section id="contact" class="text-center row py-5" style="
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+<section id="contact" class="text-center py-5" style="
+display: flex;
+flex-direction: column;
+align-items: center;
 ">
 
-  <h1 class="text-center text-white justify mb-3">CONTACT US </h1>
-  <div class="row">
-    <div class="d-flex center align-items-center container">
-     <form class="needs-validation text-white text-center" novalidate action="contact.php" method="POST" >
-       <div class="form-row">
-        <div class="form-group col-md-12 mb-3">
-          <label for="inputname4">Fullname</label>
-          <input type="email" class="form-control" name="fullname" id="fullname" placeholder="Fullname" required>
-          <div class="invalid-feedback">
-            please input your Fullname
-          </div>
-        </div>
-
-        <div class="form-group col-md-12 mb-3">
-          <label for="inputemail">Email</label>
-          <input type="email" class="form-control" id="email" placeholder="Email" name="email" required>
-          <div class="invalid-feedback">
-            please input your email
-          </div>
+<h1 class="text-center text-white justify mb-3">CONTACT US </h1>
+<div class="row">
+  <div class="d-flex center align-items-center container">
+   <form class="needs-validation text-white text-center" novalidate action="contact.php" method="POST" >
+     <div class="form-row">
+      <div class="form-group col-md-12 mb-3">
+        <label for="fullname">Fullname</label>
+        <input type="fullName" class="form-control" name="fullname" id="fullname" placeholder="Fullname" required>
+        <div class="invalid-feedback">
+          please input your Fullname
         </div>
       </div>
-      <div class="form-group">
-        <label for="inputMessage">Message</label>
-        <input type="textbox" class="form-control" id="message" placeholder="message" name="message" required>
+
+      <div class="form-group col-md-12 mb-3">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Email" 
+        name="email" required>
+        <div class="invalid-feedback">
+          please input your email
+        </div>
+      </div>
+
+      <div class="form-group col-md-12 mb-3">
+        <label for="message">Message</label>
+        <input type="textarea" class="form-control" id="message" placeholder="message" name="message" required>
         <div class="invalid-feedback">
           please input your message
         </div>
       </div>
-      <button type="submit" class="btn btn-success text-center" name="submit" id="submit">submit</button>
-    </form>
-  </div>
+    </div>
+    <button type="submit" class="btn btn-success text-center" name="submit" id="submit">submit</button>
+  </form>
+</div>
 </div>
 
 </section>
@@ -312,6 +314,17 @@
 </div>
 </body>
 
+<script>
+  $(document).ready(function() {
+    $('.carousel .carousel-caption').css('zoom', $('.carousel').width()/1250);
+  });
+
+  $(window).resize(function() {
+    $('.carousel .carousel-caption').css('zoom', $('.carousel').width()/1250);
+  });
+</script>
+
+<script src="js/formvalidation.js"></script>
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/js/bootstrap.bundle.min.js"></script>

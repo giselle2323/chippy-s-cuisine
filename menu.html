@@ -20,10 +20,15 @@
         <!-- Bootstrap core CSS -->
         <link href="vendor/css/bootstrap.min.css" rel="stylesheet">
          <style >
+         img{
+          width: 100%;
+         }
       .card{
+        width: 100%;
+       
         height: 400px;
         margin-left: 20px;
-        margin-right: 50px;
+        margin-right: 20px;
       }
       .card-img-top{
         height: 60%;
@@ -37,7 +42,7 @@
         <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-custom fixed-top js-scroll-trigger" id="site-navbar">
    <div class="container-fluid">
-    <a class="navbar-brand" id="cuisine" href="#">CHIPPY'S CUISINE</a>
+    <a class="navbar-brand" id="cuisine" href="index.php">CHIPPY'S CUISINE</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -74,8 +79,8 @@
     <!-- Modal content-->
     <div class="modal-content" id="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
         <h4 class="modal-title text-center">SIGN IN HERE ADMIN</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
       <div class="modal-body">
         <div class="d-flex jusify-content-center align-items-center container contact">
@@ -98,12 +103,12 @@
             </div>
           </div>
 
-          <button type="submit" class="btn btn-primary" name="submit" id="submit">submit</button>
+          <button type="submit" class="btn btn-success" name="submit" id="submit">submit</button>
         </form>
       </div>
     </div>
     <div class="modal-footer">
-      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
     </div>
   </div>
 
@@ -116,7 +121,7 @@
        <section id="menupage" class="px-3 m-3 ">
             <h1 class="text-center  text-white py-5">MENU BY CATEGORY</h1>
             <div class="row" >
-                    <div class="col-sm-4">
+                    <div class="col-md-6">
                     <div class="card mb-3  text-white text-center bg-dark" style="width: 300px">
                         <img class="card-img-top" src="images/poundedyam.jpg" alt="Card image cap" height="150"  >
                         <div class="card-body">
@@ -126,7 +131,7 @@
                        </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-md-6">
                     <div class="card mb-3 text-center text-white bg-dark" style="width: 300px;">
                         <img class="card-img-top" src="images/salmon.jpg" alt="Card image cap" height="150">
                         <div class="card-body">
@@ -136,7 +141,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
+              </div>
+              <div class="row">
+                <div class="col-md-6 mx-auto">
                     <div class="card mb-3 text-center text-white bg-dark" style="width: 300px;">
                         <img class="card-img-top" src="images/chicken.jpg" alt="Card image cap" height="150">
                         <div class="card-body">
@@ -146,7 +153,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-md-6 mx-auto">
                     <div class="card mb-3 text-center text-white bg-dark" style="width: 300px;">
                         <img class="card-img-top" src="images/drink.jpg" alt="Card image cap" height="150">
                             <div class="card-body">
@@ -157,7 +164,7 @@
                     </div>
                 </div>
             </div>
-
+</div>
         </section>
         <div class="container-fluid bg-dark text-center py-3" id="social">
   <ul>

@@ -1,40 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-	  <title>MENU</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>LOCAL</title>
-    <!-- Custom styles for this template -->
-    <link href="css/main.css" rel="stylesheet">
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/css/bootstrap.min.css" rel="stylesheet">
-    <script>
-      function setText7(obj){
-        var val = obj.value;
-        console.log(val);
-        document.getElementById('textBox').value = val;
-      }
-    </script>
-     <style >
-      .card{
-        height: 400px;
-        margin-left: 7px;
-        margin-right: 7px;
-      }
-      .card-img-top{
-        height: 60%;
-      }
-    </style>
-  </head>
-  <body>
+<head>
+ <title>MENU</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <meta name="description" content="">
+ <meta name="author" content="">
+ <title>LOCAL</title>
+ <!-- Custom styles for this template -->
+ <link href="css/main.css" rel="stylesheet">
+ <!-- Bootstrap core CSS -->
+ <link href="vendor/css/bootstrap.min.css" rel="stylesheet">
+ <script>
+  function setText7(obj){
+    var val = obj.value;
+    console.log(val);
+    document.getElementById('textBox').value = val;
+  }
+</script>
+<style >
+.card{
+  height: 400px;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+.card-img-top{
+  height: 60%;
+}
+</style>
+</head>
+<body>
 
-   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-custom fixed-top js-scroll-trigger" id="site-navbar">
+ <!-- Navigation -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-custom fixed-top js-scroll-trigger" id="site-navbar">
    <div class="container-fluid">
-    <a class="navbar-brand" id="cuisine" href="#">CHIPPY'S CUISINE</a>
+    <a class="navbar-brand" id="cuisine" href="index.php">CHIPPY'S CUISINE</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -69,110 +69,117 @@
 
 
 
-    <section id="continental">
-      <h1 class="text-center text-white">Continental Dishes</h1>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card  mb-3 text-center bg-dark">
-          <img class="card-img-top" src="images/spaghetti.jpg" alt="Card image cap">
-          <div class="card-body text-white">
-            <h5 class="card-title">Corn Spaghetti</h5>
-            <p class="card-text">#800 per plate.</p>
-            <button type="button" class="btn btn-info btn-md btn-outline-success" data-toggle="modal" data-target="#myModal"name="food" 
-              id=  "food" value="Corn Spaghetti" onclick="setText7(this)">ORDER NOW
-            </button>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Modal -->
-      <div id="myModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
+<section id="continental">
+  <h1 class="text-center text-white">Continental Dishes</h1>
+  
+  <!-- Modal -->
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
 
-          <!-- Modal content-->
-          <div class="modal-content" id="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title text-center">SIGN IN HERE ADMIN</h4>
-            </div>
-            <div class="modal-body">
-              <div class="d-flex jusify-content-center align-items-center container contact">
-                <h1>PLEASE ENTER YOUR ORDER AND DELIVERY DETAILS</h1>
-                <form method="POST" name="orderForm" action="database.php">
-                  <fieldset>
-                    <label for="food" >Food
-                     <input type="text" name="textBox" id="textBox" value="" />
-                    </label>
-                    <br>
-                    <label for="fullname">Fullname:
-                      <input type="text" name="fullName" id="fullName">
-                    </label>
-                    <br>
-                    <label for="plates">Plate:
-                      <input type="number" name="plate" id="plate">
-                    </label>
-                    <br>
-                    <label for="email" >Email:
-                      <input type="email" name="email" id="email">
-                    </label>
-                    <br>
-                    <label for="Delivery Address">Delivery Address:
-                      <input type="text" name="address" id="address">
-                    </label>
-                    <label for="telephone">Telephone:
-                      <input type="text" name="tele" id="tele">
-                    </label>
-                  </fieldset>
-                   <a href="successful.html" class="btn btn-danger">submit</a>
-                </form>
-              </div>
-            </div>
-          </div>
+      <!-- Modal content-->
+      <div class="modal-content" id="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title text-center">PLEASE ENTER YOUR ORDER AND DELIVERY DETAILS</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card  mb-3 text-center bg-dark">
-          <img class="card-img-top" src="images/paneer steak.jpg" alt="Card image cap">
-          <div class="card-body text-white">
-            <h5 class="card-title">Paneer Steak</h5>
-          <p class="card-text">#1500 per plate.</p>
-          <button type="button" class="btn btn-info btn-md btn-outline-success" data-toggle="modal" data-target="#myModal"name="food" 
-            id=  "food" value="Paneer Steak" onclick="setText7(this)">ORDER NOW
-          </button>
+        <div class="modal-body">
+          <div class="d-flex jusify-content-center align-items-center container contact">
+            <h1>PLACE YOUR ORDER</h1>
+            <form method="POST" name="orderForm" action="database.php">
+              <fieldset>
+                <label for="textBox" >Food
+                 <input type="text" name="textBox" id="textBox" value="" required />
+               </label>
+               <br>
+               <label for="fullname">Fullname:
+                <input type="text" name="fullName" id="fullName" required>
+              </label>
+              <br>
+              <label for="plate">Number Of Plates:
+                <input type="number" name="plate" id="plate" required>
+              </label>
+              <br>
+              <label for="email" >Email:
+                <input type="email" name="email" id="email" required>
+              </label>
+              <br>
+              <label for="Address"> Delivery Address:
+                <input type="text" name="address" id="address" required>
+              </label>
+              <label for="telephone">Telephone:
+                <input type="tele" name="tele" id="tele" readonly>
+              </label>
+            </fieldset>
+            <button type="btn" class="btn btn-md btn-success" value="submit">Submit</button>
+          </form>
         </div>
-      </div>
-    </div>
+        <div class="modal-footer">
+         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+</div>
+<div class="row">
     <div class="col-md-4">
       <div class="card  mb-3 text-center bg-dark">
-      <img class="card-img-top" src="images/Green-Bean.jpg" alt="Card image cap">
-      <div class="card-body text-white">
-        <h5 class="card-title">Green Bean Salad</h5>
-        <p class="card-text">#1300 per plate.</p>
-        <button type="button" class="btn btn-info btn-md btn-outline-success" data-toggle="modal" data-target="#myModal"name="food" 
-          id=  "food" value="Green Bean Salad" onclick="setText7(this)">ORDER NOW
+        <img class="card-img-top" src="images/spaghetti.jpg" alt="Card image cap">
+        <div class="card-body text-white">
+          <h5 class="card-title text-success">Corn Spaghetti</h5>
+          <p class="card-text">#800 per plate.</p>
+          <button type="button" class="btn  btn-md btn-success" data-toggle="modal" data-target="#myModal"name="food" 
+          id=  "food" value="Corn Spaghetti" onclick="setText7(this)">ORDER NOW
         </button>
       </div>
     </div>
   </div>
-  <div class="col-md-4">
-    <div class="card  mb-3 text-center bg-dark">
-    <img class="card-img-top" src="images/mozarella.jpg" alt="Card image cap">
+
+<div class="col-md-4">
+  <div class="card  mb-3 text-center bg-dark">
+    <img class="card-img-top" src="images/paneer steak.jpg" alt="Card image cap">
     <div class="card-body text-white">
-      <h5 class="card-title">Eggplant Mozarella Stacks</h5>
-      <p class="card-text">#1300 per plate.</p>
-      <button type="button" class="btn btn-info btn-md btn-outline-success" data-toggle="modal" data-target="#myModal"name="food" 
-        id=  "food" value="Eggplant Mozarella Stacks" onclick="setText7(this)">ORDER NOW
-      </button>
-    </div>
+      <h5 class="card-title text-success">Paneer Steak</h5>
+      <p class="card-text">#1500 per plate.</p>
+      <button type="button" class="btn btn-md btn-success" data-toggle="modal" data-target="#myModal"name="food" 
+      id=  "food" value="Paneer Steak" onclick="setText7(this)">ORDER NOW
+    </button>
   </div>
+</div>
 </div>
 <div class="col-md-4">
   <div class="card  mb-3 text-center bg-dark">
-  <img class="card-img-top" src="images/mushroom-goat-cheese-flatbread.jpg" alt="Card image cap">
-  <div class="card-body text-white">
-    <h5 class="card-title">Mushroom Goat Cheese Flatbread Pizza</h5>
-    <p class="card-text">#1500 per plate.</p>
-    <button type="button" class="btn btn-info btn-md btn-outline-success" data-toggle="modal" data-target="#myModal"name="food" 
+    <img class="card-img-top" src="images/Green-Bean.jpg" alt="Card image cap">
+    <div class="card-body text-white">
+      <h5 class="card-title text-success">Green Bean Salad</h5>
+      <p class="card-text">#1300 per plate.</p>
+      <button type="button" class="btn btn-md btn-success" data-toggle="modal" data-target="#myModal"name="food" 
+      id=  "food" value="Green Bean Salad" onclick="setText7(this)">ORDER NOW
+    </button>
+  </div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+  <div class="card  mb-3 text-center bg-dark">
+    <img class="card-img-top" src="images/mozarella.jpg" alt="Card image cap">
+    <div class="card-body text-white">
+      <h5 class="card-title text-success">Eggplant Mozarella Stacks</h5>
+      <p class="card-text">#1300 per plate.</p>
+      <button type="button" class="btn  btn-md btn-success" data-toggle="modal" data-target="#myModal"name="food" 
+      id=  "food" value="Eggplant Mozarella Stacks" onclick="setText7(this)">ORDER NOW
+    </button>
+  </div>
+</div>
+</div>
+<div class="col-md-4">
+  <div class="card  mb-3 text-center bg-dark">
+    <img class="card-img-top" src="images/mushroom-goat-cheese-flatbread.jpg" alt="Card image cap">
+    <div class="card-body text-white">
+      <h5 class="card-title text-success">Mushroom Goat Cheese Pizza</h5>
+      <p class="card-text">#1500 per plate.</p>
+      <button type="button" class="btn btn-md btn-success" data-toggle="modal" data-target="#myModal"name="food" 
       id=  "food" value="Mushroom Goat Cheese Flatbread Pizza" 
       onclick="setText7(this)">ORDER NOW
     </button>
@@ -181,18 +188,19 @@
 </div>
 <div class="col-md-4">
   <div class="card  mb-3 text-center bg-dark">
-  <img class="card-img-top" src="images/ranchero-sauce.jpg" alt="Card image cap">
-  <div class="card-body text-white">
-    <h5 class="card-title">Ranchero Sauce</h5>
-    <p class="card-text">#1800 per plate.</p>
-    <button type="button" class="btn btn-info btn-md btn-outline-success" data-toggle="modal" data-target="#myModal"name="food" 
+    <img class="card-img-top" src="images/ranchero-sauce.jpg" alt="Card image cap">
+    <div class="card-body text-white">
+      <h5 class="card-title text-success">Ranchero Sauce</h5>
+      <p class="card-text">#1800 per plate.</p>
+      <button type="button" class="btn  btn-md btn-success" data-toggle="modal" data-target="#myModal"name="food" 
       id=  "food" value="Ranchero Sauce" onclick="setText7(this)">ORDER NOW
     </button>
   </div>
 </div>
 </div>
-    </section>
-     <div class="container-fluid bg-dark text-center py-3" id="social">
+</div>
+</section>
+<div class="container-fluid bg-dark text-center py-3" id="social">
   <ul>
     <li><a href="https://web.facebook.com/?_rdc=1&_rdr"><i class="fa fa-facebook"></i></a></li>
     <li><a href="https://www.linkedin.com/feed/?trk="><i class="fa fa-linkedin"></i></a></li>
@@ -203,12 +211,12 @@
     <p>All Rights Reserved. Chippy's Cuisine 2018.</p>
   </footer>
 </div>
-  </body>
-  
-    
- <!-- Bootstrap core JavaScript -->
-       <script src="vendor/jquery/jquery.min.js"></script>
-       <script src="vendor/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/js/bootstrap.bundle.min.js"></script>
 
 </html>
 </html>
@@ -5667,5 +5675,4 @@
 
 
 
-                
-      
+

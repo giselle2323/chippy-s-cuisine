@@ -4,12 +4,12 @@ $fullName = $_POST['fullName'];
 $plate = $_POST['plate']; 
 $email = htmlspecialchars($_POST['email']);
 $address = $_POST['address'];
-$tele = $_POST['telephone'];
+$tele = $_POST['tele'];
 saveToFile($textBox, $fullName, $plate, $email, $address, 
     $tele); 
 saveToDatabase($textBox, $fullName, $plate, $email, $address, 
     $tele);
-header('Location:success.php');
+header('Location:success.html');
 
 function saveToFile($textBox, $fullName, $plate, $email, $address, $tele) {   
 	$fileHandler = fopen('delivery.txt', 'a');   
@@ -27,9 +27,9 @@ function saveToDatabase($textBox, $fullName, $plate, $email, $address, $tele) {
     $conn = mysqli_connect($serverName, $username, $password, $database);
     // Check that connection exists   
     if (!$conn) {       die("Connection failed: " . mysqli_connect_error());   }     
-    $sql = "INSERT INTO orders (textBox, fullName, plate, email, address, tele, created_date)       
+    $sql = "INSERT INTO orders (textBox, fullName, plate, email, address, tele, status, created_date)       
     VALUES ('$textBox', '$fullName', '$plate', '$email', '$address', 
-    '$tele', NOW())";   
+    '$tele', 'pending', NOW())";   
 	$result = mysqli_query($conn, $sql);
     //Check for errors   
     if (!$result) {       die("Error: " . $sql . "<br>" . mysqli_error($conn));   }   

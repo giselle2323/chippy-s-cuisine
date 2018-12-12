@@ -16,8 +16,8 @@ body{
  */
 
 .carousel-item {
-  height: 100vh;
-  min-height: 300px;
+  height: 100%;
+  min-height: 500px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -30,17 +30,17 @@ body{
 }
 #spicy{
 	color: #cc0000;
-	font-size: 70px;
+	font-size: 50px;
 }
 #and{
 	color: #ffffff;
 	display: inline;
-	font-size: 70px;
+	font-size: 50px;
 }
 #tasty{
 	color: #009e0f;
 	display: inline;
-	font-size: 70px;
+	font-size: 50px;
 }
 /* Menu*/
 .menu{
@@ -95,7 +95,85 @@ body{
  	color: #cc0000;
 
  }
+ input#fullName{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 30px;
+	width: 310px;
+	font-size:14px;
+	box-shadow: 0 0 10px;
+	-webkit-box-shadow:  0 0 10px;	/* for I.E */
+	-moz-box-shadow: 0 0 10px;	/* for Mozilla web browser*/
+    border-radius: 5px;
+	-webkit-border-radius: 5px;	/* for I.E */
+	-moz-border-radius: 5px; 	/* for Mozilla web browser*/
+}
 
+	input#textBox{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 30px;
+	width: 310px;
+	font-size:14px;
+	box-shadow: 0 0 10px;
+	-webkit-box-shadow:  0 0 10px;	/* for I.E */
+	-moz-box-shadow: 0 0 10px;	/* for Mozilla web browser*/
+    border-radius: 5px;
+	-webkit-border-radius: 5px;	/* for I.E */
+	-moz-border-radius: 5px; 	/* for Mozilla web browser*/
+}
+input#plate{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 30px;
+	width: 310px;
+	font-size:14px;
+	box-shadow: 0 0 10px;
+	-webkit-box-shadow:  0 0 10px;	/* for I.E */
+	-moz-box-shadow: 0 0 10px;	/* for Mozilla web browser*/
+    border-radius: 5px;
+	-webkit-border-radius: 5px;	/* for I.E */
+	-moz-border-radius: 5px; 	/* for Mozilla web browser*/
+}
+input#email{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 30px;
+	width: 310px;
+	font-size:14px;
+	box-shadow: 0 0 10px;
+	-webkit-box-shadow:  0 0 10px;	/* for I.E */
+	-moz-box-shadow: 0 0 10px;	/* for Mozilla web browser*/
+    border-radius: 5px;
+	-webkit-border-radius: 5px;	/* for I.E */
+	-moz-border-radius: 5px; 	/* for Mozilla web browser*/
+}
+input#address{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 30px;
+	width: 310px;
+	font-size:14px;
+	box-shadow: 0 0 10px;
+	-webkit-box-shadow:  0 0 10px;	/* for I.E */
+	-moz-box-shadow: 0 0 10px;	/* for Mozilla web browser*/
+    border-radius: 5px;
+	-webkit-border-radius: 5px;	/* for I.E */
+	-moz-border-radius: 5px; 	/* for Mozilla web browser*/
+}
+input#tele{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 30px;
+	width: 310px;
+	font-size:14px;
+	box-shadow: 0 0 10px;
+	-webkit-box-shadow:  0 0 10px;	/* for I.E */
+	-moz-box-shadow: 0 0 10px;	/* for Mozilla web browser*/
+    border-radius: 5px;
+	-webkit-border-radius: 5px;	/* for I.E */
+	-moz-border-radius: 5px; 	/* for Mozilla web browser*/
+}
 /*
  Local Dish
  */
@@ -190,11 +268,13 @@ body{
 	background-size: cover;
 	height: 100vh;
 	min-width: 300px;
-	top:30%;
-	bottom:auto;
+	padding-top: 25%;
+	padding-left: 175px;
+	border: solid;
+	border-color: green;
 }
 #success h1{
-	padding-top: 25%;
+	font-size: 70px;
 }
 /* social links*/
 #social{

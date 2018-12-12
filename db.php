@@ -1,11 +1,15 @@
 <?php
+$hostname ="localhost";
+$username ="root";
+$password ="";
+$dbname ="chippy";
+
+
+
  
  
-$con = mysqli_connect("localhost","root","","chippy");
+$con = mysql_connect($hostname, $username, $password)or die ("cannot connect");
  // Check connection
-if (mysqli_connect_errno()) {
-  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-}
- 
+ $result = mysql_select_db($dbname, $con) or die ("canot select db");
  
 ?>
