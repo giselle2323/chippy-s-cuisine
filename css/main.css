@@ -25,22 +25,23 @@ body{
   background-size: cover;
 }
 .carousel-caption {
-    top: 30%;
+	top: 40px;
     bottom: auto;
+
 }
 #spicy{
 	color: #cc0000;
-	font-size: 50px;
+	font-size: 60px;
 }
 #and{
 	color: #ffffff;
 	display: inline;
-	font-size: 50px;
+	font-size: 60px;
 }
 #tasty{
 	color: #009e0f;
 	display: inline;
-	font-size: 50px;
+	font-size: 60px;
 }
 /* Menu*/
 .menu{
@@ -108,6 +109,19 @@ body{
 	-webkit-border-radius: 5px;	/* for I.E */
 	-moz-border-radius: 5px; 	/* for Mozilla web browser*/
 }
+input#fullname{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 40px;
+	width: 310px;
+	font-size:14px;
+	box-shadow: 0 0 10px;
+	-webkit-box-shadow:  0 0 10px;	/* for I.E */
+	-moz-box-shadow: 0 0 10px;	/* for Mozilla web browser*/
+    border-radius: 5px;
+	-webkit-border-radius: 5px;	/* for I.E */
+	-moz-border-radius: 5px; 	/* for Mozilla web browser*/
+}
 
 	input#textBox{
 	margin-top: 10px;
@@ -138,7 +152,7 @@ input#plate{
 input#email{
 	margin-top: 10px;
 	margin-bottom: 10px;
-	height: 30px;
+	height: 40px;
 	width: 310px;
 	font-size:14px;
 	box-shadow: 0 0 10px;
@@ -165,6 +179,19 @@ input#tele{
 	margin-top: 10px;
 	margin-bottom: 10px;
 	height: 30px;
+	width: 310px;
+	font-size:14px;
+	box-shadow: 0 0 10px;
+	-webkit-box-shadow:  0 0 10px;	/* for I.E */
+	-moz-box-shadow: 0 0 10px;	/* for Mozilla web browser*/
+    border-radius: 5px;
+	-webkit-border-radius: 5px;	/* for I.E */
+	-moz-border-radius: 5px; 	/* for Mozilla web browser*/
+}
+input#message{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 60px;
 	width: 310px;
 	font-size:14px;
 	box-shadow: 0 0 10px;
@@ -310,8 +337,8 @@ ul li a i {
 .fa-twitter {
     background:#00aced
 }
-.google-plus {
-    background:#dd4b39
+.fa-instagram {
+    background:#DD2A7B rgb(221, 42, 123)
 }
 ul li a i:hover {
     opacity: .7;

@@ -1,45 +1,36 @@
 <?php
-ob_start();
-$host="localhost"; // Host name 
-$username="root"; // Mysql username 
-$password=""; // Mysql password 
-$db_name="chippy"; // Database name 
-$tbl_name="signin"; // Table name
-
-// Connect to server and select databse.
-mysql_connect("$host", "$username", "$password")or die("cannot connect"); 
-mysql_select_db("$db_name")or die("cannot select DB");
-
-
-
-// Define $myusername and $mypassword 
-$username=$_POST['username'];
-$password=$_POST['password'];
-
-// To protect MySQL injection (more detail about MySQL injection)
-$username = stripslashes($username);
-$password = stripslashes($password);
-$username = mysql_real_escape_string($username);
-$password = mysql_real_escape_string($password);
-$password=md5($password);
-
-$sql="SELECT * FROM $tbl_name WHERE username='$username' and password='$password'";
-$result=mysql_query($sql);
-
-// Mysql_num_row is counting table row
-$count=mysql_num_rows($result);
-// If result matched $myusername and $mypassword, table row must be 1 row
-
-if($count==1){
-// Register $myusername, $mypassword and redirect to file "login_success.php"
-session_register("username");
-session_register("password"); 
-header("location:order.php");
-}
-else {
-echo "Wrong Username or Password";
-}
-
-ob_end_flush();
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+$connect = mysqli_connect("localhost", "root", "", "chippy");  
+ session_start();  
+ if(isset($_SESSION["username"]))  
+ {  
+      header("location:index.php");  
+ }  
+ if(isset($_POST["submit"]))  
+ {  
+      if(empty($_POST["username"]) && empty($_POST["password"]))  
+      {  
+           echo '<script>alert("Both Fields are required")</script>';  
+      }  
+      else  
+      {  
+           $username = mysqli_real_escape_string($connect, $_POST["username"]);  
+           $password = mysqli_real_escape_string($connect, $_POST["password"]);  
+           $password = md5($password);  
+           $query = "SELECT * FROM signin WHERE username = '$username' AND password = '$password'";  
+           $result = mysqli_query($connect, $query);  
+           if(mysqli_num_rows($result) > 0)  
+           {  
+                $_SESSION['username'] = $username;  
+                header("location:order.php");  
+           }  
+           else  
+           {  
+                echo '<script>alert("Wrong User Details")</script>';  
+           }  
+      }  
+ } 
+ mysqli_close($connect); 
 ?>
 

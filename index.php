@@ -1,3 +1,7 @@
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -116,7 +120,7 @@
     <div class="carousel-inner" role="listbox">
       <!-- Slide One - Set the background image for this slide in the line below -->
       <div class="carousel-item active" style="background-image: url('images/straw.jpg')">
-        <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-caption text-center">
          <h2 id="spicy">Spicy <span><h2 id="and">&</h2></span><span><h2 id="tasty"> Tasty</h2></span></h2>
          <p>Taste our meals and be filled.</p>
          <a class="btn btn-danger btn-lg" href="#menu">SEE OUR MENU</a>
@@ -124,7 +128,7 @@
      </div>
      <!-- Slide Two - Set the background image for this slide in the line below -->
      <div class="carousel-item" style="background-image: url('images/cocktail.jpg')">
-      <div class="carousel-caption d-none d-md-block">
+      <div class="carousel-caption text-center ">
         <h2 id="spicy">Spicy <span><h2 id="and">&</h2></span><span><h2 id="tasty"> Tasty</h2></span></h2>
         <p>Taste our meals and be filled.</p>
         <a class="btn btn-danger btn-lg" href="#menu">SEE OUR MENU</a>
@@ -132,7 +136,7 @@
     </div>
     <!-- Slide Three - Set the background image for this slide in the line below -->
     <div class="carousel-item" style="background-image: url('images/background1.jpg')">
-      <div class="carousel-caption d-none d-md-block">
+      <div class="carousel-caption text-center ">
         <h2 id="spicy">Spicy <span><h2 id="and">&</h2></span><span><h2 id="tasty"> Tasty</h2></span></h2>
         <p>Taste our meals and be filled.</p>
         <a class="btn btn-danger btn-lg" href="#menu">SEE OUR MENU</a>
@@ -276,9 +280,7 @@ align-items: center;
         <div class="invalid-feedback">
           please input your Fullname
         </div>
-      </div>
 
-      <div class="form-group col-md-12 mb-3">
         <label for="email">Email</label>
         <input type="email" class="form-control" id="email" placeholder="Email" 
         name="email" required>
@@ -286,20 +288,19 @@ align-items: center;
           please input your email
         </div>
       </div>
-
+</div>
       <div class="form-group col-md-12 mb-3">
         <label for="message">Message</label>
         <input type="textarea" class="form-control" id="message" placeholder="message" name="message" required>
         <div class="invalid-feedback">
           please input your message
         </div>
-      </div>
-    </div>
+    
     <button type="submit" class="btn btn-success text-center" name="submit" id="submit">submit</button>
+  </div>
   </form>
 </div>
 </div>
-
 </section>
 <div class="container-fluid bg-dark text-center py-3" id="social">
   <ul>

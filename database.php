@@ -1,4 +1,6 @@
-<?php 
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', '1'); 
 $textBox = $_POST['textBox'];
 $fullName = $_POST['fullName'];
 $plate = $_POST['plate']; 
